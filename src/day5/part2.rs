@@ -1,7 +1,4 @@
-use std::ops::RangeInclusive;
-
 use crate::utils::input::read_input;
-use std::collections::HashSet;
 
 pub fn part2() {
     println!("Executing Day 5, Part 2");

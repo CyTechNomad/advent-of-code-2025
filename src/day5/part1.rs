@@ -1,5 +1,4 @@
 use crate::utils::input::read_input;
-use std::collections::HashSet;
 
 pub fn part1() {
     println!("Executing Day 5, Part 1");
