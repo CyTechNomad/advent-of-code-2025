@@ -45,13 +45,10 @@ fn count_fresh_ids(fresh_id_ranges: &[String]) -> usize {
             // to handle contiguous ranges
             if start <= *last_end + 1 {
                 *last_end = (*last_end).max(end);
-            } else {
-                // no overlap, add new range
-                merged_ranges.push((start, end));
+                continue;
             }
-        } else {
-            merged_ranges.push((start, end));
         }
+        merged_ranges.push((start, end));
     }
     merged_ranges
         .iter()
